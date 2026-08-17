@@ -74,8 +74,8 @@ style: |
 
 # Agenda
 
-1. Introduction
-2. Kubernetes
+1. Introductions
+2. Introduction to Kubernetes
 3. Use case 1: Lab in the Cloud
 4. Use case 2: Jupyter Notebooks
 5. Use case 3: Argo CD and Workflows
@@ -86,7 +86,7 @@ style: |
 
 <!-- _class: Title -->
 <!-- _header: "" -->
-# Introduction
+# Introductions
 
 ---
 
@@ -99,13 +99,12 @@ Get involved at [https://cloudnative-sig.ac.uk/](https://cloudnative-sig.ac.uk/)
 
 Current comittee includes; Laura Shemilt<sup>1</sup>, Alex Lubbock<sup>2</sup>, Piper Fowler-Wright<sup>2</sup>, Lewis Sampson<sup>3</sup>, and Tibor Auer<sup>4</sup>.
 
-<span style="font-size: 0.8em; color: gray; display: block; margin-top: 1em;"><sup>1</sup>BioFAIR
-<sup>2</sup>Rosalind Franklin Institute
-<sup>3</sup>UKRI STFC DAFNI
-<sup>4</sup>University College London</span>
+We are joined today by Dr Christopher Green<sup>3</sup>, Sys Admin in Scientific Computing Department
+
+<span style="font-size: 0.6em; color: gray; display: block; margin-top: 1em;"><sup>1</sup>BioFAIR, <sup>2</sup>Rosalind Franklin Institute, <sup>3</sup>UKRI STFC DAFNI, <sup>4</sup>University College London</span>
+
 
 ---
-<br>
 
 ## The SIG so far
 
@@ -113,14 +112,14 @@ We have been;
 
 - Building networks through conference attendance
 - Running Kubernetes introduction workshops for RSE/dRTPs
-- Actively contributing to the shared knowledge of Kubernetes in the DRI through CAKE fellowship
+- Sharing knowledge of Kubernetes in the DRI community through CAKE fellowship
 - Formalising as a RSE Soc
 
 ---
 
 ## If you are interested
 
-### You can follow along our tutorials via our GitHub pages
+### Our workshops are available via our GitHub pages
 
 <ul> <span style="font-size: 1em; color: gray; display: block; margin-top: 1em;">
 <li> <a href="https://cloud-native-sig.github.io/stfcfeb26-intro-to-kubernetes/">Deploying a Webservice with Kubernetes</a> </li>
@@ -177,21 +176,6 @@ Kubernetes is an open-source container orchestration platform to automate the de
 
 <small>K8s allows complex containerised applications to run across multiple hosts in a cluster with powerful automation and management features.</small>
 
-<!--
----
-
->Note On *Docker Swarm* - Docker Engine's [Swarm mode](https://docs.docker.com/engine/swarm/) has many goals in common with Kubernetes, but is not as actively developed, feature-rich or has the same level of resilience for production use.
--->
-
----
-
-# Architecture Overview
-
-<figure style="text-align: center; margin-top:-10px; margin-bottom:-30px; padding-top:0px;">
-  <img src="./slide-assets/kubernetes-overview.png" style="height: 500px" alt="The components of a Kubernetes Cluster">
-  <figcaption><small>Components of a Kubernetes cluster (<a href="https://kubernetes.io">kubernetes.io</a>)</small></figcaption>
-</figure>
-
 ---
 
 # Key Components
@@ -205,49 +189,36 @@ Kubernetes is an open-source container orchestration platform to automate the de
 
 ---
 
+# Architecture Overview
+
+<figure style="text-align: center; margin-top:-10px; margin-bottom:-30px; padding-top:0px;">
+  <img src="./slide-assets/kubernetes-overview.png" style="height: 500px" alt="The components of a Kubernetes Cluster">
+  <figcaption><small>Components of a Kubernetes cluster (<a href="https://kubernetes.io">kubernetes.io</a>)</small></figcaption>
+</figure>
+
+<!-- ---
+
 # Kubernetes Distributions
 
 - Vanilla k8s, i.e., [kubeadm](https://kubernetes.io/docs/reference/setup-tools/kubeadm/) (CNCF)&mdash;industry standard, fully-featured
 - [RKE2](https://docs.rke2.io/) (Rancher Kubernetes Engine 2)&mdash;enterprise, security & compliance
 - [K3s](https://k3s.io/) (Rancher)&mdash;Minimal resources & installation, e.g., IoT / Edge Computing
 - [MicroK8s](https://canonical.com/microk8s) (Canonical)&mdash;Batteries included, lightweight
-- [Minikube](https://minikube.sigs.k8s.io/docs/)&mdash;Single-node cluster for local development
+- [Minikube](https://minikube.sigs.k8s.io/docs/)&mdash;Single-node cluster for local development -->
 
 ---
 
-# The benefits of Kubernetes
+# How Kubernetes Works
 
-- **Declarative** Configuration with Git Ops (more on this later)
+## Benefits
+
+- **Declarative** Configuration. **GitOps:** Infrastructure as code, workflow managers, e.g., [Flux](https://fluxcd.io/), [ArgoCD](https://argoproj.github.io/cd/)
 - General **resource management** including networking and security
 - Ability to **scale clusters** to include additional cloud resources.
 - Offer High Availability (HA) with **Self-Healing**.
-
----
-
-# How Kubernetes Works
-
-## Benefits
-
-**Declarative:** define a target state of applications&mdash;K8s works to achieve it
-
-**Self-healing:** whenever an issue occurs with a node or pod, the  controllers recreate the components as best it can.
-
 <br>
 
 > Example: On *node failure* Kubernetes distributes workload to other nodes
-
-
----
-
-# How Kubernetes Works
-
-## Benefits
-
-**GitOps:** Infrastructure as code (`.yaml`), workflow managers, e.g., [ArgoCD](https://argoproj.github.io/cd/)
-
-If it is configured, **Scale** your pods simply by editing the manifests in your GitOps repository and K8s handles the rest.
-
-Scaling to additional nodes or resources can be straightforeward as K8s handles the pods. This also allows for rolling updates and patching hosts. 
 
 ---
 
@@ -283,34 +254,36 @@ Adds complexity and not typically suitable for:
 - HPC job management (use SLURM)
 - Large-scale parallel filesystems (e.g., Lustre)
 - Services offered by a cloud provider or technology you are already invested in
+---
+
+<!-- _class: Title -->
+<!-- _header: "" -->
+# Use cases
 
 ---
 
 <!-- _class: Title -->
 <!-- _header: "" -->
-# Use case 1: Lab in the Cloud
+<!--# Use case 1: Lab in the Cloud-->
 
----
-
-<!-- _class: Title -->
-<!-- _header: "" -->
-# Use case 2: Jupyter Notebooks
-
----
 
 <!-- _class: Title -->
 <!-- _header: "" -->
-# Use case 3: Argo CD and Workflows
+<!--# Use case 2: Jupyter Notebooks-->
 
----
 
 <!-- _class: Title -->
 <!-- _header: "" -->
-# Summary
+<!--# Use case 3: Argo CD and Workflows-->
+
+
+<!-- _class: Title -->
+<!-- _header: "" -->
+# Wrap-up
 
 ---
 
-# Cloud_Native SIG
+# Cloud Native SIG
 
 This workshop was brought to you by the Cloud-Native SIG and CAKE, with support from the Software Sustainability Institute
 
