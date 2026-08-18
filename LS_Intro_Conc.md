@@ -108,37 +108,20 @@ We are joined today by Dr Christopher Green<sup>3</sup>, Sys Admin in Scientific
 
 ## The SIG so far
 
-We have been;
+### We have been;
 
 - Building networks through conference attendance
 - Running Kubernetes introduction workshops for RSE/dRTPs
 - Sharing knowledge of Kubernetes in the DRI community through CAKE fellowship
-- Formalising as a RSE Soc
+- Progressing towards being formalisied as a RSE Society.
 
----
-
-## If you are interested
-
-### Our workshops are available via our GitHub pages
+### If you are interested
+ Our workshops are available via our GitHub pages
 
 <ul> <span style="font-size: 1em; color: gray; display: block; margin-top: 1em;">
 <li> <a href="https://cloud-native-sig.github.io/stfcfeb26-intro-to-kubernetes/">Deploying a Webservice with Kubernetes</a> </li>
 
 <li> <a href="https://github.com/cloud-native-sig/hpcdays26-pocket-sized-kubernetes"> Pocket sized Kubernetes:</a> For this one, to recreate with your own hardware, see the <a href="https://cloud-native-sig.github.io/hpcdays26-pocket-sized-kubernetes/extra-reading">extra reading section</a>.</li>
-
-</span>
-</ul>
-
-### You can join the CNSIG
-
-<ul> <span style="font-size: 1em; color: gray; display: block; margin-top: 1em;">
-<li> We are looking to grow the SIG so please join our Jisc mailing list for future updates.</li>
-<ul>
-<li> ✉️  <a href="https://www.jiscmail.ac.uk/cgi-bin/wa-jisc.exe?SUBED1=CLOUDNATIVE-SIG">cloudnative-sig@jiscmail.ac.uk</a> </li>
-
-<li>🌐 <a href="https://cloudnative-sig.ac.uk">cloudnative-sig.ac.uk</a></li>
-</ul>
-<li>Or if you are deeply interested Kubernetes and Cloud-Native technologies join our committee. Contact any of us on email or LinkedIn to show interest </li>
 
 </span>
 </ul>
@@ -154,17 +137,6 @@ We have been;
 ## What is Kubernetes (k8s)
 
 Kubernetes is an open-source container orchestration platform to automate the deployment, scaling & management of containerised applications across groups of machines.
-
----
-
-# Kubernetes vs Docker Compose
-
-- **Docker:** run apps from built images in containers (sandboxed environments)
-- **Docker Compose:** groups of containers with networking and storage on a single host
-- **Kubernetes:** Orchestration pipeline for multi-host, multi-container applications.
-<br>
-
-<br>
 
 ---
 
@@ -285,23 +257,32 @@ Adds complexity and not typically suitable for:
 
 # Cloud Native SIG
 
-This workshop was brought to you by the Cloud-Native SIG and CAKE, with support from the Software Sustainability Institute
+This webinar was brought to you by the Cloud-Native SIG and CAKE, with support from the Software Sustainability Institute
+### You can join the CNSIG
 
-&nbsp;&nbsp;&nbsp;**Join us:**
+<ul> <span style="font-size: 1em; color: gray; display: block; margin-top: 1em;">
+<li> We are looking to grow the SIG so please join our Jisc mailing list for future updates.</li>
+<ul>
+<li> ✉️  <a href="https://www.jiscmail.ac.uk/cgi-bin/wa-jisc.exe?SUBED1=CLOUDNATIVE-SIG">cloudnative-sig@jiscmail.ac.uk</a> </li>
 
-- ✉️  [cloudnative-sig@jiscmail.ac.uk](https://www.jiscmail.ac.uk/cgi-bin/wa-jisc.exe?SUBED1=CLOUDNATIVE-SIG)
-- 🌐 [cloudnative-sig.ac.uk](https://cloudnative-sig.ac.uk)
+<li>🌐 <a href="https://cloudnative-sig.ac.uk">cloudnative-sig.ac.uk</a></li>
+</ul>
+<li>Or if you are deeply interested Kubernetes and Cloud-Native technologies join our committee. Contact any of us on email or LinkedIn to show interest </li>
+
+</span>
+</ul>
 
 ---
 
+# Next up
+
+**Join the CNSIG at RSECon 2026!** 
+
+We will be running the *Deploying a Webservice with Kubernetes* workshop on Thursday the 10th September. If you're going to be at the conference feel free to come along, and catch the CNSIG throughout the event.
+
 # Stay in touch
 
-### Email
-- lewis.sampson@stfc.ac.uk
-
-### LinkedIn
-- [Lewis Sampson](https://www.linkedin.com/in/lewis-sampson-298967123/)
-- ...
+Feel free to contact the SIG after the webinar using the websites "Contact Us" page. [https://cloudnative-sig.ac.uk/pages/contact-us.html](https://cloudnative-sig.ac.uk/pages/contact-us.html)
 
 ---
 
