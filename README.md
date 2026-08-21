@@ -9,6 +9,6 @@ This repository is a space for the slide decks for the webinar. The slides are u
 - CGreen Jupyterhub.pdf
 - AL_PFW_ArgoWF.pdf
 
-For information on the event see the link below. 
+A recording of the webinar is available at [YouTube/Kubernetes for Research Infrastructure: Core Concepts and Practical Use Cases](https://www.youtube.com/watch?v=s6hw7WrLlqk)
 
-https://acit.surrey.ac.uk/events/2026-08-20_Kubernetes_Webinar.html
+For further information on the event see [acit.surrey.ac.uk/events/2026-08-20_Kubernetes_Webinar](https://acit.surrey.ac.uk/events/2026-08-20_Kubernetes_Webinar.html)
